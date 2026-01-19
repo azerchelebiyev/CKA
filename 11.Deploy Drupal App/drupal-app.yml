@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: drupal
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: drupal
+  template:
+    metadata:
+      labels:
+        app: drupal
+    spec:
+      containers:
+        - name: drupal
+          image: drupal:8.6
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+          env:
+            - name: DRUPAL_DB_HOST
+              value: drupal-mysql-service
+            - name: DRUPAL_DB_USER
+              value: drupal
+            - name: DRUPAL_DB_PASSWORD
+              value: drupalpass
+            - name: DRUPAL_DB_NAME
+              value: drupal
