@@ -1,7 +1,7 @@
 BACK-END TIER
-1. Create a deployment named redis-master for Redis master.
-Replicas count should be 1.
-Container name should be master-redis-devops and it should use image redis.
+1. Create a deployment named redis-master for Redis master.  
+Replicas count should be 1.  
+Container name should be master-redis-devops and it should use image redis.  
 Request resources as CPU should be 100m and Memory should be 100Mi.
 Container port should be redis default port i.e 6379.
 2. Create a service named redis-master for Redis master. Port and targetPort should be Redis default port i.e 6379.
