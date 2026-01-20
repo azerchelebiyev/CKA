@@ -4,9 +4,9 @@
     value: R00t  
   b) Create a secret named mysql-user-pass with key/value pairs as below:  
     name: username  
-value: kodekloud_aim  
-name: password  
-value: TmPcZjtRQx  
+    value: kodekloud_aim  
+    name: password  
+    value: TmPcZjtRQx  
 c) Create a secret named mysql-db-url with key/value pairs as below:  
 name: database  
 value: kodekloud_db2  
