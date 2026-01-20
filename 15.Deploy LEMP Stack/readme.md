@@ -1,16 +1,16 @@
 1. Create some secrets for MySQL.  
-a) Create a secret named mysql-root-pass wih key/value pairs as below:  
-name: password  
-value: R00t  
+  a) Create a secret named mysql-root-pass wih key/value pairs as below:  
+    name: password  
+    value: R00t  
 b) Create a secret named mysql-user-pass with key/value pairs as below:  
 name: username  
 value: kodekloud_aim  
 name: password  
 value: TmPcZjtRQx  
-Create a secret named mysql-db-url with key/value pairs as below:  
+c) Create a secret named mysql-db-url with key/value pairs as below:  
 name: database  
 value: kodekloud_db2  
-Create a secret named mysql-host with key/value pairs as below:  
+d) Create a secret named mysql-host with key/value pairs as below:  
 name: host  
 value: mysql-service  
 2. Create a config map php-config for php.ini with variables_order = "EGPCS" data.
