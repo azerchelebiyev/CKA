@@ -1,19 +1,18 @@
-1. Create some secrets for MySQL.
-Create a secret named mysql-root-pass wih key/value pairs as below:
-name: password
-value: R00t
-Create a secret named mysql-user-pass with key/value pairs as below:
-name: username
-value: kodekloud_aim
-
-name: password
-value: TmPcZjtRQx
-Create a secret named mysql-db-url with key/value pairs as below:
-name: database
-value: kodekloud_db2
-Create a secret named mysql-host with key/value pairs as below:
-name: host
-value: mysql-service
+1. Create some secrets for MySQL.  
+Create a secret named mysql-root-pass wih key/value pairs as below:  
+name: password  
+value: R00t  
+Create a secret named mysql-user-pass with key/value pairs as below:  
+name: username  
+value: kodekloud_aim  
+name: password  
+value: TmPcZjtRQx  
+Create a secret named mysql-db-url with key/value pairs as below:  
+name: database  
+value: kodekloud_db2  
+Create a secret named mysql-host with key/value pairs as below:  
+name: host  
+value: mysql-service  
 2. Create a config map php-config for php.ini with variables_order = "EGPCS" data.
 3. Create a deployment named lemp-wp.
 4. Create two containers under it. First container must be nginx-php-container using image webdevops/php-nginx:alpine-3-php7 and second container must be mysql-container from image mysql:5.6. Mount php-config configmap in nginx container at /opt/docker/etc/php/php.ini location.
