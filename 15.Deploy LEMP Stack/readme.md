@@ -1,8 +1,8 @@
 1. Create some secrets for MySQL.  
-Create a secret named mysql-root-pass wih key/value pairs as below:  
+a) Create a secret named mysql-root-pass wih key/value pairs as below:  
 name: password  
 value: R00t  
-Create a secret named mysql-user-pass with key/value pairs as below:  
+b) Create a secret named mysql-user-pass with key/value pairs as below:  
 name: username  
 value: kodekloud_aim  
 name: password  
