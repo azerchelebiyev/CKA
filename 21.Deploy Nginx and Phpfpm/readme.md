@@ -10,5 +10,5 @@ c) Nginx container should be named as nginx-container and it should use nginx:la
 d) The shared volume shared-files should be mounted at /var/www/html location in both containers. Copy /opt/index.php from jump host to the nginx document root inside nginx container.  
 
 
-kubectl cp /opt/index.php nginx-phpfpm:/var/www/html/ --container=nginx-container
+kubectl cp /opt/index.php nginx-phpfpm:/var/www/html/ --container=nginx-container  
 kubectl exec -it nginx-phpfpm -- /bin/bash
